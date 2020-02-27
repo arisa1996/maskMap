@@ -1,0 +1,133 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    @include ipad_min600{
+        position: relative;
+    } 
+}
+.leaflet-control-container .leaflet-top{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    top: unset;
+    left: unset;
+    @include ipad_min600{
+        bottom: 20px;
+    }
+}
+
+//標軸的樣式
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster-small div {
+    background-color: rgba(110, 204, 57, 0.6);
+}
+.marker-cluster-medium {
+    background-color: rgba(241, 211, 87, 0.6);
+}
+.marker-cluster-medium div {
+    background-color: rgba(240, 194, 12, 0.6);
+}
+.marker-cluster-large {
+    background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div {
+    background-color: rgba(241, 128, 23, 0.6);
+}
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px;
+}
+.marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 15px;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.marker-cluster span {
+    line-height: 30px;
+}
+
+
+// 更改map地標軸資訊框的css
+.map_itemText-area{
+    font-family: $font-main;
+    @extend %sm-flex;
+    .map_shopName{
+        font-size: $font-l-m;
+        font-weight: 500;
+    }
+}
+.leaflet-popup-content .map_time{
+    margin: 0px;
+    font-size: $font-l-xs;
+}
+.map_update{
+    color: $color-lightGray;
+    font-size: $font-l-xs;
+    margin-bottom: 10px;
+}
+.item-mask .map_mask{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    border-radius: 50px;
+    font-size: $font-l-xs;
+    color: $color-white;
+    padding: 3px;
+    span{
+        font-size:13px;
+    }
+}
+.map_adult_mask,.map_adult_mask_zero{
+    margin-right: 5px;
+}
+.leaflet-fade-anim .leaflet-popup-content-wrapper{
+    padding: 10px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content{
+    width: 154px;
+    margin: 0px;
+    p{
+      margin: 0px;
+    }
+}
+
+
+.map_iconArea{
+    margin-top: 8px;
+    margin-right: 10px;
+    a{
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+    .map_star{
+        background-image: url('/img/sm_star.jpg');
+        background-repeat: no-repeat;
+        margin-bottom: 5px;
+    }
+    .map_range{
+        background-image: url('/img/icon_nav_sm.png');
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+

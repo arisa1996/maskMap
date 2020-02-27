@@ -1,0 +1,41 @@
+.wrap{
+    max-width: 100%;
+    max-height: 100%;
+    font-family: $font-main;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9999;
+    @include ipad_min600{
+        max-width: 92%;
+    }
+}
+.header{
+    max-width: 100%;
+    @extend %sm-flex;
+    align-items: center;
+    padding:1em;
+    background-color: $color-white;
+    @include ipad_min600{
+        display: none;
+    }
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: $color-themeOrange;
+    font-size: $font-xl;
+    font-weight: 700;
+    .logoIcon{
+        max-width:3rem;
+        height: 2rem;
+        margin-left: 1rem;
+    }
+}
+.fa-bars{
+    font-size: $font-m;
+    line-height: 2.4rem;
+    color: $color-themeBlack;
+}
+
+

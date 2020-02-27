@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap');
+$font-main:'Noto Sans TC', sans-serif;
+
+$color-white:rgba(255, 255, 255, 1);
+$color-themeOrange:rgba(239, 138, 0, 1);
+$color-themeBlue:rgba(0, 195, 195, 1);
+$color-lighterGray:rgba(247, 247, 247, 1);
+$color-lightGray:rgba(159, 159, 159, 1);
+$color-themeBlack:rgba(112, 112, 112,1);
+$color-smallShadow:rgba(112, 112, 112, 0.16);
+$color-bigShadow:rgba(0, 0, 0,0.16);
+
+//320px-600px
+$base-font-size:1.6rem;
+$font-xs:$base-font-size*0.75; //12px
+$font-s:$base-font-size*0.9; //15px
+$font-base:$base-font-size;
+$font-m:$base-font-size*1.13; //18px
+$font-l:$base-font-size*1.25; //20px
+$font-xl:$base-font-size*1.5; //24px
+
+//600px以上
+$font-l-xs: 12px;
+$font-l-base : 16px;
+$font-l-m: 18px;
+$font-l-mm: 20px;
+$font-l-xm: 22px;
+$font-l-l: 35px;
+$font-l-xl: 38px;
+
+%img{
+    max-width:100%;
+    vertical-align: middle;
+}
+%sm-flex{
+    display: flex;
+    justify-content: space-between;
+}
+%btn{
+    outline: none;
+    background-color: $color-white;
+    border: 1px solid $color-themeBlack;
+    border-radius: 5rem;
+    font-family: $font-main;
+    color: $color-themeBlack;
+    cursor: pointer;
+    @include ipad_min600{
+        border-radius: 50px;
+    }
+}
+%maskStyle{
+    border-radius: 5rem;
+    padding: .7rem 2rem;
+    @include ipad_min600{
+        border-radius: 50px;
+        padding: 13px 0px;
+    }
+}
+#btnFocus {
+    color: $color-white;
+    background-color: $color-themeOrange;
+    border: none;
+}
+
+

@@ -1,0 +1,365 @@
+//從mobile_320 開始
+//rem = px*html.font-size
+#sideMenu-switch{
+    display: none;
+}
+#sideMenu-switch:checked + .sideMenu{
+    transform: translateX(-100%);
+}
+.sideMenu{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: $color-lighterGray;
+    box-shadow: $color-bigShadow .3rem .3rem 1.5rem; 
+    box-sizing: border-box; 
+    color: $color-themeBlack;
+    transition: .5s all ease;
+    transform: translateX(-110%);
+    position: relative;
+    @include ipad_min600{
+        max-width: 500px;
+        transform: translateX(0);
+        box-shadow: $color-bigShadow 3px 3px 15px; 
+        transition: .4s;       
+    }
+    //桌機版控制側邊欄
+    .switch-control{
+        display: none;
+        @include ipad_min600{
+            display: block;
+            position: absolute;
+            top: 50px;
+            right: -30px;
+            cursor: pointer;
+        }       
+    }
+}
+//手機板控制側邊欄
+.js_sideMenu{
+    @include ipad_max600{
+        overflow: hidden;
+        transition: .5s all ease;
+        transform: translateX(0);
+    }    
+}
+.sm-Tittle{
+    @extend %sm-flex;
+    align-items: flex-end;
+    padding: 1.2rem 2rem 0rem;
+    @include ipad_min600{
+        padding: 20px 29px 0px ;
+    } 
+    h2{
+        font-size: $font-m;
+        font-weight: 700; 
+        @include ipad_min600{
+            font-size: $font-l-l;
+        } 
+    }
+    .sm-Text-source{
+        font-size: $font-base*0.5;
+        color: $color-lightGray;
+        text-align: end;
+        @include ipad_min600{
+            font-size: $font-l-xs;
+        }
+    }
+    .sm-Text-Date{
+        font-size: $font-s;
+        @include ipad_min600{
+            font-size: $font-l-base;
+        }
+    }
+}
+.sm-banner{
+    max-width: 100%;
+    position: relative;
+    img{
+        @extend %img;
+    }
+    .today{
+        position: absolute;
+        top: 18%;
+        left: 8%;
+        font-size: $font-l;
+        font-weight: 900;
+        @include ipad_min600{
+            font-size: $font-l-xl;
+            top: 15%;
+        }
+    }
+    .lastId{
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        color: $color-themeOrange;
+        font-size: $font-l;
+        font-weight: 700;
+        @include ipad_min600{
+            font-size: 37px;
+            left: 8%;
+        }
+    }
+}
+.sm-location{
+    position: relative;
+    padding: 0rem 1.5rem;
+    @include ipad_min600{
+        padding: 0px 28px;
+    }
+    h4{
+        font-size: $font-xs;
+        margin-bottom: .5rem;
+        @include ipad_min600{
+            font-size: $font-l-mm;
+            margin-bottom: 10px;
+        }
+    }
+    .locationSerch{
+        width: 93%;
+        border: 1px solid $color-themeBlack;
+        border-radius: 2.6rem;
+        outline: none;
+        padding: .5rem 1rem;
+        font-size: $font-base*0.63;
+        font-family: $font-main;
+        @include ipad_min600{
+            font-size: $font-l-m;
+            padding: 9px 18px;
+            border-radius: 26px;
+        }
+    }
+    .fa-search{
+        font-size: $font-base;
+        position: absolute;
+        top: 50%;
+        right: 8%;
+        cursor: pointer;
+        @include ipad_min600{
+            font-size: $font-l-xm;
+            top: 55%;
+        }
+        @include desktop_min1200{
+            top: 60%;
+        }
+    }
+}
+.sm-maskButton{
+    @extend %sm-flex;
+    position: relative;
+    padding: 1.2rem 1.5rem;
+    @include ipad_min600{
+        padding: 15px 28px;
+    }
+    &::after{
+        content: '';
+        width: 70%;
+        height: 1px;
+        background-color: $color-lightGray;
+        position: absolute;
+        bottom: -20%;
+        left: 15%;
+    }
+    .maskBtn{
+        @extend %btn;
+        padding: .5rem 2rem;
+        font-size: $font-xs;
+        @include ipad_min600{
+            font-size: $font-l-mm;
+            padding: 10px 30px;
+        }
+    }
+}
+.sm-shop{
+    @extend %sm-flex;
+    align-items: center;
+    padding: 3.5rem 1.5rem 1.2rem;
+    @include ipad_min600{
+        padding: 45px 28px 15px;
+    }    
+    h3{
+        font-size: $font-base;
+        font-weight: 500;
+        @include ipad_min600{
+            font-size: 25px;
+        }
+    }    
+}
+.sm-shopButton{
+    align-items: center;
+    display: flex;
+    .shopBtn{
+        @extend %btn;
+        padding: .2rem .7rem;
+        font-size: $font-base*0.63;
+        &+.shopBtn{
+            margin-left: 5px;
+        }
+        @include ipad_min600{
+            font-size: $font-l-base;
+            padding: 2px 7px;
+        }
+    }
+}
+.sm-shopItems{
+    padding:  0rem 1.2rem 1.2rem;
+    height: 35vh;
+    overflow-y: scroll;
+    @include ipad_min600{
+        padding: 0px 28px 28px;
+        height: 25vh;
+        //捲軸效果用height固定寬度
+    }
+}
+.item{
+    background-color: $color-white;
+    border-radius: 1.5rem;
+    box-shadow: $color-smallShadow .1rem .1rem 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    @include ipad_min600{
+        padding: 15px 23px;
+        margin-bottom: 23px;
+        border-radius: 15px;
+        box-shadow: $color-smallShadow 1px 1px 15px;
+    }
+}
+.itemText-area{
+    font-family: $font-main;
+    @extend %sm-flex;
+    margin-bottom: 1rem;
+    @include ipad_min600{
+        margin-bottom: 16px;
+    }
+}
+.itemText{
+    line-height: 1.7;
+    .shopName{
+        font-size: $font-s;
+        font-weight: 500;
+        @include ipad_min600{
+            font-size: $font-l-xm;
+        }
+    }
+    .distance,p{
+        font-size: $font-xs;
+        font-weight: 300;
+        @include ipad_min600{
+            font-size: $font-l-base;
+        }
+    }
+    .distance{
+        padding-left: 1rem;
+        @include ipad_min600{
+            padding-left: 10px;
+        }
+    }
+}
+.iconArea{
+    margin-top: .8rem;
+    @include ipad_min600{
+        margin-top: 8px;
+    }
+    a{
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        @include mobile_min375{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        @include mobile_min480{
+            width: 3.4rem;
+            height: 3.4rem;
+        }
+        @include ipad_min600{
+            width: 34px;
+            height: 34px;
+        }
+    }
+    .star{
+        background-image: url('/img/sm_star.jpg');
+        background-repeat: no-repeat;
+        margin-bottom: 1rem;
+        @include mobile_min375{
+            background-image: url('/img/smm-star.jpg');
+        }
+        @include mobile_min480{
+            background-image: url('/img/icon_star_unselected.png');
+            margin-bottom: 0rem;
+        }
+        @include ipad_min600{
+            margin-bottom: 16px;
+        }
+    }
+    .range{
+        background-image: url('/img/icon_nav_sm.png');
+        background-repeat: no-repeat;
+        @include mobile_min375{
+            background-image: url('/img/sm-l.jpg');
+        }
+        @include mobile_min480{
+            background-image: url('/img/icon_nav.png');
+        }
+    }
+}
+.item-mask,.mask{
+    display: flex;
+    justify-content: space-around;
+    .mask{
+        width: 50%;
+        align-items: center;
+        @extend %maskStyle;
+        font-size: $font-base*0.81;
+        color: $color-white;
+        @include ipad_min600{
+            font-size: $font-l-mm;
+        }
+        span{
+            font-size: $font-l;
+            @include ipad_min600{
+                font-size: 28px;
+            }
+        }
+    }
+    .adult_mask,.adult_mask_zero{
+        margin-right: 1.5rem;
+        @include ipad_min600{
+            margin-right: 28px;
+        }
+    }
+    .adult_mask,.map_adult_mask{
+        background-color: $color-themeBlue;
+    }
+    .adult_mask_zero,.child_mask_zero,.map_adult_mask_zero{
+        background-color: $color-lightGray;
+    }
+    .child_mask{
+        background-color: #FF7878;
+    }
+}
+.update{
+    color: $color-lightGray;
+    font-size: $font-base*0.5;
+    text-align: end;
+    margin-top: .5rem;
+    @include ipad_min600{
+        font-size: $font-l-xs;
+        margin-top: 5px;
+    }
+}
+
+//星星變色
+#selected {
+    background-image: url('/img/sm_star2.jpg');
+    @include mobile_min375{
+        background-image: url('/img/smm-star2.jpg');
+    }
+    @include mobile_min480{
+        background-image: url('/img/icon_star_selected.png');
+    }
+}
+//地圖上的星星變色
+#map_selscted{
+    background-image: url('/img/sm_star2.jpg');
+}
