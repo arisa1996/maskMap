@@ -20,16 +20,13 @@ function searchFn() {
             let correct = filterData();
             renderData(correct);
 
-
             bigBtn(correct);
             smallBtn(correct);
-            
-            
+        
             input.value = '';
         }
     }
 }
-
 
 
 function filterData() {
@@ -78,11 +75,7 @@ function renderData(correct) {
         list.appendChild(oLi);
     }
     
-    //console.log(correct);
-
    maskStyle();
-
-
    clickLi(correct);
    clickStar(correct);
    
