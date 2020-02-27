@@ -80,7 +80,7 @@ function renderIcon() {
             <div class="map_itemText-area">
                 <div class="itemText">
                     <h4 class="map_shopName">${data[i].properties.name}</h4>  
-                    <p class="map_time js_openTime">營業時間：營業中</p>
+                    <p class="map_time js_openTime">營業時間：${data[i].properties.todayOpen}</p>
                 </div>
                 <div class="map_iconArea">
                     <a href="javascript:;" class="star map_star" dataID=${data[i].properties.id}></a>
