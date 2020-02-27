@@ -609,20 +609,20 @@ section {
 }
 
 .iconArea .star {
-  background-image: url("img/sm_star.jpg");
+  background-image: url("/img/sm_star.jpg");
   background-repeat: no-repeat;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 375px) {
   .iconArea .star {
-    background-image: url("img/smm-star.jpg");
+    background-image: url("/img/smm-star.jpg");
   }
 }
 
 @media (min-width: 480px) {
   .iconArea .star {
-    background-image: url("img/icon_star_unselected.png");
+    background-image: url("/img/icon_star_unselected.png");
     margin-bottom: 0rem;
   }
 }
@@ -634,19 +634,19 @@ section {
 }
 
 .iconArea .range {
-  background-image: url("img/icon_nav_sm.png");
+  background-image: url("/img/icon_nav_sm.png");
   background-repeat: no-repeat;
 }
 
 @media (min-width: 375px) {
   .iconArea .range {
-    background-image: url("img/sm-l.jpg");
+    background-image: url("/img/sm-l.jpg");
   }
 }
 
 @media (min-width: 480px) {
   .iconArea .range {
-    background-image: url("img/icon_nav.png");
+    background-image: url("/img/icon_nav.png");
   }
 }
 
