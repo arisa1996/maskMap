@@ -1,5 +1,5 @@
 window.onresize();
 
 showDate();
-map();
+myMap();
 hamBar();
