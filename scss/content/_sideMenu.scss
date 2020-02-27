@@ -351,15 +351,15 @@
 
 //星星變色
 #selected {
-    background-image: url('img/sm_star2.jpg');
+    background-image: url('https://upload.cc/i1/2020/02/27/Ie4gpq.jpg');
     @include mobile_min375{
-        background-image: url('img/smm-star2.jpg');
+        background-image: url('https://upload.cc/i1/2020/02/27/LRfu4x.jpg');
     }
     @include mobile_min480{
-        background-image: url('img/icon_star_selected.png');
+        background-image: url('https://upload.cc/i1/2020/02/27/z7EMPO.png');
     }
 }
 //地圖上的星星變色
 #map_selscted{
-    background-image: url('img/sm_star2.jpg');
+    background-image: url('https://upload.cc/i1/2020/02/27/Ie4gpq.jpg');
 }

@@ -720,23 +720,23 @@ section {
 }
 
 #selected {
-  background-image: url("img/sm_star2.jpg");
+  background-image: url("https://upload.cc/i1/2020/02/27/Ie4gpq.jpg");
 }
 
 @media (min-width: 375px) {
   #selected {
-    background-image: url("img/smm-star2.jpg");
+    background-image: url("https://upload.cc/i1/2020/02/27/LRfu4x.jpg");
   }
 }
 
 @media (min-width: 480px) {
   #selected {
-    background-image: url("img/icon_star_selected.png");
+    background-image: url("https://upload.cc/i1/2020/02/27/z7EMPO.png");
   }
 }
 
 #map_selscted {
-  background-image: url("img/sm_star2.jpg");
+  background-image: url("https://upload.cc/i1/2020/02/27/Ie4gpq.jpg");
 }
 
 html, body {
