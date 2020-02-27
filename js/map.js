@@ -27,7 +27,7 @@ var myIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
-function myMap() {
+function map() {
     map = L.map('map', {
         center: [22.639602, 120.302546], //預設中心點的經緯度[高雄火車站]
         zoom: 16 //地圖縮放等級
