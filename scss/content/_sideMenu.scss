@@ -278,14 +278,14 @@
         }
     }
     .star{
-        background-image: url('../img/sm_star.jpg');
+        background-image: url('/img/sm_star.jpg');
         background-repeat: no-repeat;
         margin-bottom: 1rem;
         @include mobile_min375{
-            background-image: url('../img/smm-star.jpg');
+            background-image: url('/img/smm-star.jpg');
         }
         @include mobile_min480{
-            background-image: url('../img/icon_star_unselected.png');
+            background-image: url('/img/icon_star_unselected.png');
             margin-bottom: 0rem;
         }
         @include ipad_min600{
@@ -293,13 +293,13 @@
         }
     }
     .range{
-        background-image: url('../img/icon_nav_sm.png');
+        background-image: url('/img/icon_nav_sm.png');
         background-repeat: no-repeat;
         @include mobile_min375{
-            background-image: url('../img/sm-l.jpg');
+            background-image: url('/img/sm-l.jpg');
         }
         @include mobile_min480{
-            background-image: url('../img/icon_nav.png');
+            background-image: url('/img/icon_nav.png');
         }
     }
 }
@@ -351,15 +351,15 @@
 
 //星星變色
 #selected {
-    background-image: url('../img/sm_star2.jpg');
+    background-image: url('/img/sm_star2.jpg');
     @include mobile_min375{
-        background-image: url('../img/smm-star2.jpg');
+        background-image: url('/img/smm-star2.jpg');
     }
     @include mobile_min480{
-        background-image: url('../img/icon_star_selected.png');
+        background-image: url('/img/icon_star_selected.png');
     }
 }
 //地圖上的星星變色
 #map_selscted{
-    background-image: url('../img/sm_star2.jpg');
+    background-image: url('/img/sm_star2.jpg');
 }
