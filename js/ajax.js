@@ -1,11 +1,9 @@
 function ajax(){
     // AJAX 物件
     let xhr = new XMLHttpRequest();
-    //1
     // 準備資料
     // GET POST OPTION
     xhr.open(`GET`, `https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json`, true);
-    //2
     // 送出
     xhr.send();
     // 準備狀態碼 readystate 1234
