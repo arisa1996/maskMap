@@ -278,14 +278,14 @@
         }
     }
     .star{
-        background-image: url('https://upload.cc/i1/2020/02/27/O7acHG.jpg');
+        background-image: url('../img/sm_star.jpg');
         background-repeat: no-repeat;
         margin-bottom: 1rem;
         @include mobile_min375{
-            background-image: url('https://upload.cc/i1/2020/02/27/IPhCQG.jpg');
+            background-image: url('../img/smm-star.jpg');
         }
         @include mobile_min480{
-            background-image: url('https://upload.cc/i1/2020/02/27/26NqA0.png');
+            background-image: url('../img/icon_star_unselected.png');
             margin-bottom: 0rem;
         }
         @include ipad_min600{
@@ -293,13 +293,13 @@
         }
     }
     .range{
-        background-image: url('https://upload.cc/i1/2020/02/27/2Eg7RA.png');
+        background-image: url('/maskMap/img/icon_nav_sm.png');
         background-repeat: no-repeat;
         @include mobile_min375{
-            background-image: url('https://upload.cc/i1/2020/02/27/B0edt6.jpg');
+            background-image: url('/maskMap/img/sm-l.jpg');
         }
         @include mobile_min480{
-            background-image: url('https://upload.cc/i1/2020/02/27/woNIy2.png');
+            background-image: url('/maskMap/img/icon_nav.png');
         }
     }
 }
