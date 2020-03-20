@@ -1,7 +1,6 @@
+loader ();
 window.onresize();
-
 showDate();
-myMap();
+geoloaction();
 hamBar();
-
 

@@ -37,3 +37,12 @@
     line-height: 2.4rem;
     color: $color-themeBlack;
 }
+#js_loader{
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    z-index: 9999;
+    @include ipad_min600{
+        left: 45%;
+    }
+}

@@ -27,9 +27,24 @@ var myIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
-function myMap() {
+//定位座標
+function geoloaction() {
+	navigator.geolocation.getCurrentPosition(res=>{
+		let lat = res.coords.latitude,
+			lng = res.coords.longitude;
+			myMap(lat, lng);
+	}, err=>{
+		let lat = 22.604799,
+			lng = 120.2976256;
+			myMap(lat, lng);
+	})
+}
+
+
+function myMap(lat,lng) {
+    loaderon ();
     map = L.map('map', {
-        center: [22.639602, 120.302546], //預設中心點的經緯度[高雄火車站]
+        center: [lat, lng], //預設中心點的經緯度[高雄火車站]
         zoom: 16 //地圖縮放等級
     });
 

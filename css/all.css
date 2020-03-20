@@ -205,6 +205,19 @@ section {
   color: #707070;
 }
 
+#js_loader {
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  z-index: 9999;
+}
+
+@media (min-width: 600px) {
+  #js_loader {
+    left: 45%;
+  }
+}
+
 #sideMenu-switch {
   display: none;
 }
