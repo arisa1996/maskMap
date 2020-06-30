@@ -1,7 +1,5 @@
 # maskMap
-#2020 #口罩地圖 #JavaScript #地圖應用 OpenStreetMap  
-
-# 全台口罩地圖搜尋
+#2020 #口罩地圖 #JavaScript #地圖應用 OpenStreetMap 
 
 <p>
 以 Javascript 串接健保署的口罩剩餘數量 API，將資料以地圖座標方式呈現，讓使用者可以找到自己附近仍有剩餘口罩的藥局，以便用最短的時間買到口罩，有依照實際需求修改設計稿與 UI 美化
